@@ -1,0 +1,19 @@
+{
+  "name": "streaming-project",
+  "version": "1.0.0",
+  "description": "A streaming application with frontend and backend components",
+  "scripts": {
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start:frontend": "cd Frontend && npm start",
+    "start:backend": "cd Backend && npm start",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd Frontend && npm run dev",
+    "dev:backend": "cd Backend && npm run dev",
+    "install:all": "npm install && cd Frontend && npm install && cd ../Backend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "author": "",
+  "license": "ISC"
+} 
